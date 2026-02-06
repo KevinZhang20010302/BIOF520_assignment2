@@ -256,8 +256,8 @@ km_plot
     ## Ignoring unknown labels:
     ## • colour : "Strata"
 
-![](Untitled_files/figure-gfm/unnamed-chunk-10-1.png)<!-- --> \###
-c-index calculation for internal test
+![](BIOF520_assignment2_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+\### c-index calculation for internal test
 
 ``` r
 flip_u_risk_score <- -1 * U_test_risk_score
@@ -311,7 +311,7 @@ EAU_km_plot
     ## Ignoring unknown labels:
     ## • colour : "Strata"
 
-![](Untitled_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](BIOF520_assignment2_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
 
 ### AUC for my classification
 
@@ -355,8 +355,8 @@ roc_plot<-ggroc(u_test_roc, color = "black") +
 roc_plot
 ```
 
-![](Untitled_files/figure-gfm/unnamed-chunk-13-1.png)<!-- --> \### AUC
-for old classification
+![](BIOF520_assignment2_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+\### AUC for old classification
 
 ``` r
 UROMOL_ground_truth_EAU <- UROMOL_ground_truth[!EAU_no_na_index]
@@ -397,8 +397,8 @@ eau_roc_plot<-ggroc(eau_u_test_roc, color = "black") +
 eau_roc_plot
 ```
 
-![](Untitled_files/figure-gfm/unnamed-chunk-14-1.png)<!-- --> \###
-external validation
+![](BIOF520_assignment2_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+\### external validation
 
 ``` r
 k_test_risk_score<- predict(cox_penalty, newx = knowles_full, type = "link")
@@ -447,7 +447,7 @@ k_km_plot
     ## Ignoring unknown labels:
     ## • colour : "Strata"
 
-![](Untitled_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](BIOF520_assignment2_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 ### c-index for external
 
@@ -503,7 +503,7 @@ k_roc_plot<-ggroc(k_test_roc, color = "black") +
 k_roc_plot
 ```
 
-![](Untitled_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](BIOF520_assignment2_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
 
 ``` r
 ### package a final function
